@@ -1,5 +1,6 @@
 import { ShooingStar } from 'assets/icons';
 
+// TODO: handle
 const BenefitsCart = () => {
     return (
         <section className='mb-20 flex w-full flex-col items-center justify-center gap-4 px-[20px] md:m-auto md:w-[1200px] md:flex-row md:p-0'>
