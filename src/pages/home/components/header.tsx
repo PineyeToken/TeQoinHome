@@ -1,5 +1,49 @@
+import { useEffect } from 'react';
+
+// Assets
+import { HeaderGradientCircle, SpecialArrow } from 'assets/icons';
+
 const Header = () => {
-    return <div>Header</div>;
+    useEffect(() => {
+        const video = document.querySelector('video');
+        if (video) {
+            video.play().catch(err => {
+                console.warn('Autoplay failed:', err);
+            });
+        }
+    }, []);
+
+    return (
+        <header className='relative flex h-screen flex-col items-center overflow-hidden pt-30 text-center font-bold text-white md:justify-center'>
+            <HeaderGradientCircle className='absolute top-[-100%] right-[-50%] -z-1 md:flex' />
+
+            <span className='absolute bottom-0 left-0 -z-1 h-[200px] w-full bg-[linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(0,0,0,0)_100%)]'></span>
+            {/* TODO: add poster */}
+            <video
+                playsInline
+                autoPlay
+                loop
+                controls={false}
+                muted
+                className='video absolute top-0 left-0 -z-20 h-screen w-full object-none'
+            >
+                <source src='/video/headerVideo.mp4' type='video/mp4' />
+            </video>
+            <span className='absolute top-0 left-0 -z-10 h-screen w-full bg-[linear-gradient(0deg,rgba(0,0,0,0.49)_0%,rgba(0,0,0,1)_100%)]'></span>
+            <h1 className='accent-font mb-2 text-[16px] text-[#0153FD] md:text-[32px] md:tracking-[4px]'>TeQoin</h1>
+            <h3 className='accent-font text-[24px] md:text-[52px] md:tracking-[6px]'>The Next-Generation</h3>
+            <h2 className='accent-font text-[41px] md:mb-6 md:text-[88px] md:leading-[60px] md:tracking-[10px]'>EVM Layer-2</h2>
+            <h4 className='mt-3 mb-5 w-[280px] text-[12px] font-normal md:w-[unset] md:text-[18px] md:tracking-[1.3px]'>
+                Scaling Solution Using Optimistic Rollups on EVM for zero fee.
+            </h4>
+            <a
+                href=''
+                className='flex h-[38px] w-[190px] items-center justify-center gap-3 rounded-full bg-[#0153FD] text-[12px] font-normal md:mt-4 md:h-[52px] md:w-[256px] md:text-[16px]'
+            >
+                Join the Community <SpecialArrow className='w-2 md:w-3' />
+            </a>
+        </header>
+    );
 };
 
 export default Header;

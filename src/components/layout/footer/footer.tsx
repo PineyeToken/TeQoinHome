@@ -4,7 +4,7 @@ const iconClasses = 'flex h-[40px] w-[40px] items-center justify-center rounded-
 
 const Footer = () => {
     return (
-        <footer className='relative mt-100 w-full px-5'>
+        <footer className='relative mt-6 w-full px-5'>
             <div className='flex h-[100px] w-[calc(100%-20px)] flex-col items-center justify-center gap-2 rounded-t-[20px] bg-[linear-gradient(120deg,#0158FF_39%,#013599_111.62%)] text-center text-[14px] text-white md:w-[calc(100%-250px)] md:flex-row md:gap-4 md:text-[20px]'>
                 <p>Join Us, to redefine EVM for futures</p>
                 <div className='flex items-center justify-center gap-4'>
