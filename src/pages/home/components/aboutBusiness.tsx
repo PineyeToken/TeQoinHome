@@ -23,14 +23,11 @@ const AboutBusiness = () => {
             </div>
             <div className='relative z-5 text-center text-white'>
                 <h3 className='accent-font text-[32px] font-bold md:text-left md:text-[52px]'>What is TeQoin</h3>
-                <p className='accent-font m-auto w-[270px] text-[14px] tracking-[2px] md:hidden'>
-                    <span className='text-[#C2D1E1]'>Next-Gen EVM: Layer-2:</span> Faster. Cheaper. Scalable
-                </p>
                 <p className='m-auto mt-[8px] w-[90%] text-[12px] leading-[21px] text-[#FDFDFD] md:ml-[0] md:text-justify md:text-[14px] md:leading-[27px]'>
-                    TeQoin is a next-generation Bitcoin Layer-2 designed to scale BTC, enable intelligent DeFi, and secure assets against
-                    future quantum threats.
+                    TeQoin is an Ethereum Layer-2 scaling solution using Optimistic Rollups to deliver zero-fee, high-speed transactions and
+                    scalable dApps, while remaining fully community-governed and compatible with Ethereum
                 </p>
-                <div className='item-center mt-4 flex w-full gap-4 md:mt-8'>
+                <div className='item-center mt-4 flex w-full justify-center gap-4 md:mt-8 md:justify-start'>
                     <a
                         href=''
                         className='flex h-[38px] w-[190px] items-center justify-center gap-3 rounded-full bg-[#0153FD] text-[12px] font-normal md:h-[52px] md:w-[256px] md:text-[16px]'

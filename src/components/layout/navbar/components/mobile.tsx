@@ -13,7 +13,7 @@ const MobileNavbar = () => {
     const [sandwichMenuStatus, setSandwichMenuStatus] = useState(false);
     return (
         <>
-            <nav className='fixed top-0 flex h-[58px] w-full items-center justify-between bg-white px-5 pl-2 lg:hidden'>
+            <nav className='fixed top-0 z-50 flex h-[58px] w-full items-center justify-between bg-white px-5 pl-2 lg:hidden'>
                 <img src='/img/logoWithText.webp' className='w-[140px]' alt='' />{' '}
                 <AnimatePresence mode='wait'>
                     {sandwichMenuStatus ? (
@@ -54,15 +54,15 @@ const MobileNavbar = () => {
                             duration: 0.35,
                             ease: 'easeOut'
                         }}
-                        className='h-[calc(100vh-58px)] fixed top-[58px] left-0 z-50 w-full bg-[#070B0A] p-[20px] pt-[32px] pb-[40px] flex flex-col justify-between'
+                        className='fixed top-[58px] left-0 z-50 flex h-[calc(100vh-58px)] w-full flex-col justify-between bg-[#070B0A] p-[20px] pt-[32px] pb-[40px]'
                     >
-                        <ul className='bg-[#141F37] p-5 rounded-[5px]'>
+                        <ul className='rounded-[5px] bg-[#141F37] p-5'>
                             {navbarLinks.map((item, index) => (
                                 <li
                                     key={`navbar-links-${index}`}
-                                    className={`relative flex text-white text-[14px] transition-all duration-300 border-b-2 border-b-[#2C3B5B] last:border-b-0 before:absolute before:left-0 before:bottom-[-2px] before:h-[2px] before:w-0 before:bg-[#4C6CFF] before:transition-all before:duration-300 hover:before:w-[72px] hover:text-[#3385FF] ${window.location.hash === item.link ? '!text-[#3385FF] before:bg-[#4C6CFF] before:w-[72px]' : ''}`}
+                                    className={`relative flex border-b-2 border-b-[#2C3B5B] text-[14px] text-white transition-all duration-300 before:absolute before:bottom-[-2px] before:left-0 before:h-[2px] before:w-0 before:bg-[#4C6CFF] before:transition-all before:duration-300 last:border-b-0 hover:text-[#3385FF] hover:before:w-[72px] ${window.location.hash === item.link ? '!text-[#3385FF] before:w-[72px] before:bg-[#4C6CFF]' : ''}`}
                                 >
-                                    <a href={item.link} className='flex w-full h-full py-4'>
+                                    <a href={item.link} className='flex h-full w-full py-4'>
                                         {item.title}
                                     </a>
                                 </li>
@@ -78,7 +78,7 @@ const MobileNavbar = () => {
                             </a>
                             <a
                                 href=''
-                                className='w-[124px] h-[45px] rounded-full bg-[#0153FD] flex items-center justify-center text-white text-[14px]'
+                                className='flex h-[45px] w-[124px] items-center justify-center rounded-full bg-[#0153FD] text-[14px] text-white'
                             >
                                 Join Us
                             </a>
