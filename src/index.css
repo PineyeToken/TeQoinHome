@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@layer theme,
+base,
+components,
+utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+@custom-variant dark (&:is(.dark *));
+
+* {
+    font-family: "Poppins", sans-serif !important;
+}
+
+.accent-font {
+    font-family: "Outfit", sans-serif !important;
+}
+
+body{
+    background-color: #010101;
+}
