@@ -1,7 +1,7 @@
 // Components
 import Footer from 'components/layout/footer';
 import Navbar from 'components/layout/navbar';
-import { AboutBusiness, BenefitsCart, BuildingSection, Header, Mission, ProgramsCard } from './components';
+import { AboutBusiness, BenefitsCart, BuildingSection, Header, Mission, ProgramsCard, Roadmap } from './components';
 
 const Home = () => {
     return (
@@ -14,8 +14,9 @@ const Home = () => {
                 <BuildingSection />
                 <Mission />
                 <ProgramsCard />
+                <Roadmap />
+                <Footer />
             </div>
-            <Footer />
         </main>
     );
 };
