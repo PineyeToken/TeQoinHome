@@ -1,6 +1,8 @@
 import { ShooingStar } from 'assets/icons';
 
-// TODO: handle
+// TODO: handle content
+
+// TODO: compress and webp png
 const BenefitsCart = () => {
     return (
         <section className='mb-4 flex w-full flex-col items-center justify-center gap-4 px-[20px] lg:m-auto lg:flex-row lg:p-0 lg:px-[20px] xl:w-[1200px]'>
