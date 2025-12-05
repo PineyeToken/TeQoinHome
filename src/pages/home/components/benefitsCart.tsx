@@ -3,7 +3,7 @@ import { ShooingStar } from 'assets/icons';
 // TODO: handle
 const BenefitsCart = () => {
     return (
-        <section className='mb-20 flex w-full flex-col items-center justify-center gap-4 px-[20px] md:m-auto md:w-[1200px] md:flex-row md:p-0'>
+        <section className='mb-4 flex w-full flex-col items-center justify-center gap-4 px-[20px] lg:m-auto lg:flex-row lg:p-0 lg:px-[20px] xl:w-[1200px]'>
             <div className='rounded-[20px] bg-gradient-to-b from-[#00246F] to-[#000000] p-[2px]'>
                 <div className='rounded-[16px] bg-[#141E35] p-[22px] text-[#FDFDFD]'>
                     <ShooingStar className='mb-4' />

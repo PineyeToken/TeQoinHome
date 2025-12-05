@@ -1,7 +1,7 @@
 // Components
 import Footer from 'components/layout/footer';
 import Navbar from 'components/layout/navbar';
-import { AboutBusiness, BenefitsCart, BuildingSection, Header } from './components';
+import { AboutBusiness, BenefitsCart, BuildingSection, Header, Mission } from './components';
 
 const Home = () => {
     return (
@@ -9,8 +9,11 @@ const Home = () => {
             <Navbar />
             <Header />
             <AboutBusiness />
-            <BenefitsCart />
-            <BuildingSection />
+            <div className='overflow-hidden'>
+                <BenefitsCart />
+                <BuildingSection />
+                <Mission />
+            </div>
             <Footer />
         </main>
     );
