@@ -2,17 +2,20 @@
     "name": "teqoin",
     "private": true,
     "version": "1.0.0",
-    "type": "module",
+    "type": "module","homepage": "https://pineyetoken.github.io/TeQoinHome/",
     "scripts": {
         "dev": "vite --host",
         "build": "tsc -b && vite build",
         "preview": "vite preview",
-        "lint": "eslint --ext .js --ignore-path .gitignore ."
+        "lint": "eslint --ext .js --ignore-path .gitignore .",
+          "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "@tailwindcss/postcss": "^4.1.14",
         "@tailwindcss/vite": "^4.1.14",
         "framer-motion": "^12.23.22",
+        "gh-pages": "^6.3.0",
         "motion": "^12.23.22",
         "pako": "^2.1.0",
         "postcss": "^8.5.6",
@@ -28,6 +31,7 @@
     },
     "devDependencies": {
         "@eslint/js": "^9.36.0",
+        "@types/gh-pages": "^6",
         "@types/react": "^19.1.16",
         "@types/react-dom": "^19.1.9",
         "@typescript-eslint/eslint-plugin": "^8.45.0",

@@ -7,6 +7,7 @@ import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
     plugins: [react(), tsconfigPaths(), mkcert(), tailwindcss(), svgr()],
+    base: '/TeQoinHome/',
     server: {
         port: 3000
     }
