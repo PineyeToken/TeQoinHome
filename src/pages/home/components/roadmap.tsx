@@ -202,8 +202,7 @@ const Roadmap: React.FC = () => {
     }, []);
 
     return (
-        <section className='relative mt-[80px] mb-40'>
-            {' '}
+        <section className='relative mt-[80px] mb-40' id='roadmap'>
             <FloatingDots count={200} minSize={0.5} maxSize={1.5} minFade={0.0005} maxFade={0.0015} speed={0.2} />
             <HeaderGradientCircle className='pointer-events-none absolute top-[-100px] left-[-400px] -z-1 h-auto w-[800px]' />
             <HeaderGradientCircle className='pointer-events-none absolute right-[-400px] bottom-[-400px] -z-10 h-auto w-[800px]' />
@@ -231,7 +230,7 @@ const Roadmap: React.FC = () => {
                     })}
                 </div>
 
-                <span className='relative top-[-30px] h-[900px] w-0.5 bg-[linear-gradient(180deg,rgba(1,64,184,0)_-2.2%,rgba(1,88,255,0.5)_5.73%,rgba(1,87,252,0.84)_73.45%,rgba(1,53,153,0)_100%)]'></span>
+                <span className='relative top-[-30px] h-[900px] w-0.5 bg-[linear-gradient(180deg,rgba(1,64,184,0)_-2.2%,rgba(1,88,255,0.5)_5.73%,rgba(1,87,252,0.84)_73.45%,rgba(1,53,153,0)_100%)] lg:h-[1300px]'></span>
 
                 <div>
                     {roadmapRight.map(item => {

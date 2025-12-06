@@ -11,6 +11,7 @@ const iconClasses = 'flex h-[45px] w-[45px] items-center justify-center rounded-
 
 const MobileNavbar = () => {
     const [sandwichMenuStatus, setSandwichMenuStatus] = useState(false);
+
     return (
         <>
             <nav className='fixed top-0 z-50 flex h-[58px] w-full items-center justify-between bg-white px-5 pl-2 lg:hidden'>
@@ -59,6 +60,7 @@ const MobileNavbar = () => {
                         <ul className='rounded-[5px] bg-[#141F37] p-5'>
                             {navbarLinks.map((item, index) => (
                                 <li
+                                    onClick={() => setSandwichMenuStatus(!sandwichMenuStatus)}
                                     key={`navbar-links-${index}`}
                                     className={`relative flex border-b-2 border-b-[#2C3B5B] text-[14px] text-white transition-all duration-300 before:absolute before:bottom-[-2px] before:left-0 before:h-[2px] before:w-0 before:bg-[#4C6CFF] before:transition-all before:duration-300 last:border-b-0 hover:text-[#3385FF] hover:before:w-[72px] ${window.location.hash === item.link ? '!text-[#3385FF] before:w-[72px] before:bg-[#4C6CFF]' : ''}`}
                                 >
@@ -70,14 +72,15 @@ const MobileNavbar = () => {
                         </ul>
 
                         <div className='flex items-center justify-center gap-3'>
-                            <a href='' className={iconClasses}>
+                            <a href='https://x.com/TeQoin' target='_blank' className={iconClasses}>
                                 <XLogo />
                             </a>
-                            <a href='' className={iconClasses}>
+                            <a href='https://t.me/TeQoin' target='_blank' className={iconClasses}>
                                 <TelegramLogo />
                             </a>
                             <a
-                                href=''
+                                href='https://t.me/TeQoin'
+                                target='_blank'
                                 className='flex h-[45px] w-[124px] items-center justify-center rounded-full bg-[#0153FD] text-[14px] text-white'
                             >
                                 Join Us

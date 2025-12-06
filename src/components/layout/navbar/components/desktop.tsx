@@ -7,7 +7,7 @@ interface INavbarLinks {
 export const navbarLinks: INavbarLinks[] = [
     {
         title: 'Home',
-        link: '#'
+        link: '#home'
     },
     {
         title: 'About Us',
@@ -15,25 +15,25 @@ export const navbarLinks: INavbarLinks[] = [
     },
     {
         title: 'Features',
-        link: '#'
+        link: '#features'
     },
     {
         title: 'Vision & Mission',
-        link: '#'
+        link: '#vision-mission'
     },
     {
         title: 'Use Cases',
-        link: '#'
+        link: '#use-case'
     },
     {
         title: 'RoadMap',
-        link: '#'
+        link: '#roadmap'
     }
 ];
 
 const DesktopNavbar = () => {
     return (
-        <nav className='absolute top-8 hidden w-full items-center justify-center px-3 lg:flex'>
+        <nav className='absolute top-8 z-40 hidden w-full items-center justify-center px-3 lg:flex'>
             <div className='flex h-[68px] w-[1000px] items-center justify-between rounded-full bg-white px-3'>
                 <img src='/img/logoWithText.webp' className='w-[140px]' alt='' />
 
@@ -45,7 +45,11 @@ const DesktopNavbar = () => {
                     ))}
                 </ol>
 
-                <a href='' className='flex h-[50px] w-[150px] items-center justify-center rounded-full bg-[#0153FD] text-white'>
+                <a
+                    href='https://t.me/TeQoin'
+                    target='_blank'
+                    className='flex h-[50px] w-[150px] items-center justify-center rounded-full bg-[#0153FD] text-white'
+                >
                     Join Us
                 </a>
             </div>

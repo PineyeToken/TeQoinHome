@@ -5,7 +5,10 @@ const iconClasses = 'flex h-[52px] w-[52px] items-center justify-center rounded-
 
 const AboutBusiness = () => {
     return (
-        <div className='mb-10 w-full py-20 lg:m-auto lg:flex lg:flex-row-reverse lg:items-center lg:p-[20px] xl:w-[1200px]'>
+        <section
+            id='about-us'
+            className='mb-10 w-full py-20 lg:m-auto lg:flex lg:flex-row-reverse lg:items-center lg:p-[20px] xl:w-[1200px]'
+        >
             <div className='relative flex items-center justify-center'>
                 <motion.img
                     src='/img/evmImg1.webp'
@@ -29,22 +32,23 @@ const AboutBusiness = () => {
                 </p>
                 <div className='item-center mt-4 flex w-full justify-center gap-4 lg:mt-8 lg:justify-start'>
                     <a
-                        href=''
+                        href='https://t.me/TeQoin'
+                        target='_blank'
                         className='flex h-[38px] w-[190px] items-center justify-center gap-3 rounded-full bg-[#0153FD] text-[12px] font-normal lg:h-[52px] lg:w-[256px] lg:text-[16px]'
                     >
                         Join the Community <SpecialArrow className='w-2 lg:w-3' />
                     </a>
                     <div className='hidden items-center gap-4 lg:flex'>
-                        <a href='' className={iconClasses}>
+                        <a href='https://x.com/TeQoin' target='_blank' className={iconClasses}>
                             <XLogo />
                         </a>
-                        <a href='' className={iconClasses}>
+                        <a href='https://t.me/TeQoin' target='_blank' className={iconClasses}>
                             <TelegramLogo />
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

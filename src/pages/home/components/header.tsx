@@ -14,7 +14,10 @@ const Header = () => {
     }, []);
 
     return (
-        <header className='relative flex h-screen flex-col items-center overflow-hidden pt-30 text-center font-bold text-white md:justify-center'>
+        <header
+            id='home'
+            className='relative flex h-screen flex-col items-center overflow-hidden pt-30 text-center font-bold text-white md:justify-center'
+        >
             <HeaderGradientCircle className='absolute top-[-100%] right-[-50%] -z-1 md:flex' />
 
             <span className='absolute bottom-0 left-0 -z-1 h-[200px] w-full bg-[linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(0,0,0,0)_100%)]'></span>
@@ -37,7 +40,8 @@ const Header = () => {
                 Scaling Solution Using Optimistic Rollups on EVM for zero fee.
             </h4>
             <a
-                href=''
+                href='https://t.me/TeQoin'
+                target='_blank'
                 className='flex h-[38px] w-[190px] items-center justify-center gap-3 rounded-full bg-[#0153FD] text-[12px] font-normal md:mt-4 md:h-[52px] md:w-[256px] md:text-[16px]'
             >
                 Join the Community <SpecialArrow className='w-2 md:w-3' />

@@ -19,3 +19,7 @@ utilities;
 body{
     background-color: #010101;
 }
+
+html{
+    scroll-behavior: smooth;
+}

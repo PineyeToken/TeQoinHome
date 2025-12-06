@@ -2,7 +2,10 @@ import { HeaderGradientCircle } from 'assets/icons';
 
 const ProgramsCard = () => {
     return (
-        <section className='relative flex w-full flex-col items-center justify-center gap-4 px-[20px] lg:m-auto lg:flex-row lg:p-0 lg:px-[20px] xl:w-[1200px]'>
+        <section
+            id='use-case'
+            className='relative flex w-full flex-col items-center justify-center gap-4 px-[20px] lg:m-auto lg:flex-row lg:p-0 lg:px-[20px] xl:w-[1200px]'
+        >
             <HeaderGradientCircle className='pointer-events-none absolute -z-1 h-auto w-full lg:w-[600px]' />
             <div className='rounded-[20px] bg-gradient-to-b from-[#00246F] to-[#000000] p-[2px]'>
                 <div className='rounded-[16px] bg-[#141E35] p-[22px] text-[#FDFDFD]'>
