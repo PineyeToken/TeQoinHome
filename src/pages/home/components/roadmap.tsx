@@ -11,7 +11,7 @@ const roadmapLeft = [
         subtitle: 'First operational L@ network',
         description: (
             <>
-                <ul className='accent-font text-[10px]'>
+                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px]'>
                     <li className='mb-2'>. Mainnet launch (sequencer centralized)</li>
                     <li className='mb-2'>. Wallet v2 & payments</li>
                     <li className='mb-2'>. Bridge fully operational</li>
@@ -29,7 +29,7 @@ const roadmapLeft = [
         subtitle: 'Public usability & ling-term growth',
         description: (
             <>
-                <ul className='accent-font text-[10px]'>
+                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px]'>
                     <li className='mb-2'>. Full public wallet & multi-chain assets</li>
                     <li className='mb-2'>. Fast-withdraw options</li>
                     <li className='mb-2'>. Governance framework for sequencer decentralization</li>
@@ -45,7 +45,7 @@ const roadmapLeft = [
         subtitle: 'Full ZK Rollup deployment & ecosystem scaling',
         description: (
             <>
-                <ul className='accent-font text-[10px]'>
+                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px]'>
                     <li className='mb-2'>. Complete ZK Rollup network</li>
                     <li className='mb-2'>. Fully decentralized sequencer & governance</li>
                     <li className='mb-2'>. Expanded staking & liquidity rewards</li>
@@ -64,7 +64,7 @@ const roadmapRight = [
         subtitle: 'Launch MVP for developers & early users',
         description: (
             <>
-                <ul className='accent-font text-[10px]'>
+                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px]'>
                     <li className='mb-2'>. Wallet (ETH + ERC20)</li>
                     <li className='mb-2'>. Instant payments demo</li>
                     <li className='mb-2'>. Private → public testnet</li>
@@ -82,7 +82,7 @@ const roadmapRight = [
         subtitle: 'Adoption & incentives',
         description: (
             <>
-                <ul className='accent-font text-[10px]'>
+                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px]'>
                     <li className='mb-2'>. Multi-token bridge support</li>
                     <li className='mb-2'>. Advanced staking & liquidity rewards</li>
                     <li className='mb-2'>. SDK & templates for complex dApps</li>
@@ -98,7 +98,7 @@ const roadmapRight = [
         subtitle: 'Begin transition to ZK Rollup',
         description: (
             <>
-                <ul className='accent-font text-[10px]'>
+                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px]'>
                     <li className='mb-2'>. Hybrid ZK Rollup network</li>
                     <li className='mb-2'>. Instant transaction finality</li>
                     <li className='mb-2'>. Backward-compatible dApps</li>
@@ -147,29 +147,36 @@ const RoadmapItem: React.FC<RoadmapItemProps> = ({
 
     return (
         <div
-            className={`relative h-[250px] w-[150px] px-[10px] ${offsetTop}`}
+            className={`relative h-[250px] w-[150px] px-[10px] ${offsetTop} lg:h-[350px] lg:w-[320px]`}
             onClick={toggle}
             onMouseEnter={isDesktop ? () => setOpen(id) : undefined}
             onMouseLeave={isDesktop ? () => setOpen(null) : undefined}
         >
             <div
-                className={`absolute ${isLeft ? 'right-2' : 'left-2'} t-0 z-10 w-full rounded-[16px] border border-solid border-[#033BCC] bg-[#010101] p-3 transition-all duration-300 ${
+                className={`absolute ${isLeft ? 'right-2 xl:right-[300px]' : 'left-2 xl:left-[300px]'} t-0 z-10 w-full rounded-[16px] border border-solid border-[#033BCC] bg-[#010101] p-3 transition-all duration-300 xl:w-[300px] ${
                     isOpen ? 'scale-100 opacity-100' : 'pointer-events-none scale-95 opacity-0'
                 }`}
             >
-                <b className='accent-font mb-2 block text-[12px] leading-[16px] font-medium'>{subtitle}</b>
+                <b className='accent-font mb-2 block text-[12px] leading-[16px] font-medium lg:hidden'>{subtitle}</b>
                 {description}
             </div>
 
             <img
                 src='/img/separatorMobile.png'
                 alt=''
-                className={`absolute top-[-44px] z-[1] ${isLeft ? 'left-[26px] rotate-180' : 'left-[-26px]'}`}
+                className={`absolute top-[-44px] z-[1] ${isLeft ? 'left-[26px] rotate-180' : 'left-[-26px]'} lg:hidden`}
             />
-            <p className='text-center text-[26px]'>
+
+            <img
+                src='/img/separatorDesktop.png'
+                alt=''
+                className={`absolute top-[-44px] z-[1] hidden ${isLeft ? 'left-[27px]' : 'left-[-27px] rotate-180'} lg:block`}
+            />
+            <p className='text-center text-[26px] lg:text-[44px]'>
                 <b>{quarter}</b> {year}
             </p>
-            <small className='flex w-full items-center justify-center text-center text-[14px]'>{label}</small>
+            <small className='flex w-full items-center justify-center text-center text-[14px] lg:text-[22px] lg:font-light'>{label}</small>
+            <b className='accent-font mb-2 hidden text-center text-[12px] leading-[16px] font-light lg:block'>{subtitle}</b>
         </div>
     );
 };
@@ -200,7 +207,7 @@ const Roadmap: React.FC = () => {
             <FloatingDots count={200} minSize={0.5} maxSize={1.5} minFade={0.0005} maxFade={0.0015} speed={0.2} />
             <HeaderGradientCircle className='pointer-events-none absolute top-[-100px] left-[-400px] -z-1 h-auto w-[800px]' />
             <HeaderGradientCircle className='pointer-events-none absolute right-[-400px] bottom-[-400px] -z-10 h-auto w-[800px]' />
-            <h3 className='accent-font mb-20 text-center text-[38px] font-normal text-white'>TeQoin RoadMap</h3>
+            <h3 className='accent-font mb-20 text-center text-[38px] font-normal text-white lg:text-[52px]'>TeQoin RoadMap</h3>
             <div className='flex justify-center text-white'>
                 <div>
                     {roadmapLeft.map(item => {
@@ -215,7 +222,7 @@ const Roadmap: React.FC = () => {
                                 description={item.description}
                                 subtitle={item.subtitle}
                                 side='left'
-                                offsetTop='top-[154px]'
+                                offsetTop='top-[154px] lg:top-[204px]'
                                 open={open}
                                 isDesktop={isDesktop}
                                 setOpen={setOpen}

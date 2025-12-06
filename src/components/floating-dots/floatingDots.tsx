@@ -120,7 +120,6 @@ export default function FloatingDots({
     return (
         <canvas
             ref={canvasRef}
-            className='dots-canvas'
             style={{
                 width: '100%',
                 height: '100%',
