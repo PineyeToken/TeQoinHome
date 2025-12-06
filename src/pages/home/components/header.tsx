@@ -35,7 +35,7 @@ const Header = () => {
             <span className='absolute top-0 left-0 -z-10 h-screen w-full bg-[linear-gradient(0deg,rgba(0,0,0,0.49)_0%,rgba(0,0,0,1)_100%)]'></span>
             <h1 className='accent-font mb-2 text-[16px] tracking-[3px] text-[#0153FD] md:text-[32px] md:tracking-[4px]'>TeQoin</h1>
             <h3 className='accent-font text-[24px] tracking-[3px] md:text-[52px] md:tracking-[6px]'>The Next-Generation</h3>
-            <h2 className='accent-font -mt-3 text-[41px] tracking-[5px] md:mb-6 md:text-[88px] md:leading-[60px] md:tracking-[10px]'>
+            <h2 className='accent-font -mt-3 text-[41px] tracking-[5px] md:-mt-0 md:mb-6 md:text-[88px] md:leading-[60px] md:tracking-[10px]'>
                 EVM Layer-2
             </h2>
             <h4 className='mt-3 mb-5 w-[280px] text-[12px] font-normal md:w-[unset] md:text-[18px] md:tracking-[1.3px]'>
