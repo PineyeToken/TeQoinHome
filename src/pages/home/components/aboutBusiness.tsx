@@ -7,15 +7,15 @@ const AboutBusiness = () => {
     return (
         <section
             id='about-us'
-            className='mb-10 w-full py-20 lg:m-auto lg:flex lg:flex-row-reverse lg:items-center lg:p-[20px] xl:w-[1200px]'
+            className='mb-10 w-full py-14 lg:m-auto lg:flex lg:flex-row-reverse lg:items-center lg:p-[20px] xl:w-[1200px]'
         >
             <div className='relative flex items-center justify-center'>
                 <motion.img
                     src='/img/evmImg1.webp'
                     alt=''
-                    className='absolute z-1 w-[50%] max-w-[240px] opacity-[0.9] lg:w-[300px] lg:max-w-[unset]'
-                    initial={{ y: -80 }}
-                    animate={{ y: [-80, -30, -80] }}
+                    className='absolute z-1 w-[40%] max-w-[240px] opacity-[0.9] lg:w-[300px] lg:max-w-[unset]'
+                    initial={{ y: -70 }}
+                    animate={{ y: [-70, -30, -70] }}
                     transition={{
                         duration: 7,
                         repeat: Infinity,

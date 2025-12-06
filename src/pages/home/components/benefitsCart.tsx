@@ -1,8 +1,5 @@
-import { ShooingStar } from 'assets/icons';
+import { Reliability, ShooingStar, ZeroFee } from 'assets/icons';
 
-// TODO: handle content
-
-// TODO: compress and webp png
 const BenefitsCart = () => {
     return (
         <section
@@ -11,7 +8,7 @@ const BenefitsCart = () => {
         >
             <div className='rounded-[20px] bg-gradient-to-b from-[#00246F] to-[#000000] p-[2px]'>
                 <div className='rounded-[16px] bg-[#141E35] p-[22px] text-[#FDFDFD]'>
-                    <ShooingStar className='mb-4' />
+                    <ZeroFee className='mb-4' />
                     <p className='accent-font mb-2 text-[19px] font-bold'>Zero Fees</p>
                     <small className='accent-font text-[14px]'>
                         Send, pay, and trade without any transaction costs, making blockchain accessible to everyone.
@@ -21,18 +18,18 @@ const BenefitsCart = () => {
             <div className='rounded-[20px] bg-gradient-to-b from-[#00246F] to-[#000000] p-[2px]'>
                 <div className='rounded-[16px] bg-[#141E35] p-[22px] text-[#FDFDFD]'>
                     <ShooingStar className='mb-4' />
-                    <p className='accent-font mb-2 text-[19px] font-bold'>Zero Fees</p>
+                    <p className='accent-font mb-2 text-[19px] font-bold'>High Speed & Throughput</p>
                     <small className='accent-font text-[14px]'>
-                        Send, pay, and trade without any transaction costs, making blockchain accessible to everyone.
+                        Optimized for fast transactions and high TPS, so apps run smoothly and users don’t wait.
                     </small>
                 </div>
             </div>
             <div className='rounded-[20px] bg-gradient-to-b from-[#00246F] to-[#000000] p-[2px]'>
                 <div className='rounded-[16px] bg-[#141E35] p-[22px] text-[#FDFDFD]'>
-                    <ShooingStar className='mb-4' />
-                    <p className='accent-font mb-2 text-[19px] font-bold'>Zero Fees</p>
+                    <Reliability className='mb-4' />
+                    <p className='accent-font mb-2 text-[19px] font-bold'>Efficiency & Reliability</p>
                     <small className='accent-font text-[14px]'>
-                        Send, pay, and trade without any transaction costs, making blockchain accessible to everyone.
+                        Low latency and reliable confirmations ensure a stable, secure, and frictionless experience.
                     </small>
                 </div>
             </div>

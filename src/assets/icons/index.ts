@@ -4,5 +4,7 @@ export { default as TelegramLogo } from './telegramLogo.svg?react';
 export { default as Cross } from './cross.svg?react';
 export { default as SpecialArrow } from './specialArrow.svg?react';
 export { default as HeaderGradientCircle } from './headerGradientCircle.svg?react';
-export { default as ShooingStar } from './shooingStar.svg?react';
 export { default as BuildingShadow } from './buildingShadow.svg?react';
+export { default as ShooingStar } from './shooingStar.svg?react';
+export { default as Reliability } from './reliability.svg?react';
+export { default as ZeroFee } from './zeroFee.svg?react';

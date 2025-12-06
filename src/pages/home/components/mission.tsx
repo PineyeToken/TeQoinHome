@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Mission = () => {
     return (
-        <section className='relative mb-50 flex-row-reverse items-center justify-center gap-10 p-5 lg:m-auto lg:mb-50 lg:flex lg:w-[1200px]'>
+        <section className='relative mb-20 flex-row-reverse items-center justify-center gap-10 p-5 lg:m-auto lg:mb-50 lg:flex lg:w-[1200px]'>
             <HeaderGradientCircle className='pointer-events-none absolute top-[-100px] right-[-294px] -z-1 h-auto w-[600px] lg:top-[-200px] lg:right-[unset] lg:left-[-200px] lg:w-[800px]' />
             <div>
                 <h3 className='accent-font text-center text-[50px] font-normal text-white lg:text-left lg:text-[40px]'>Vision</h3>
@@ -17,7 +17,7 @@ const Mission = () => {
             </div>
             <div className='relative'>
                 <motion.img
-                    src='/img/ball.png'
+                    src='/img/ball.webp'
                     className='m-auto mt-30 w-[300px] lg:m-[unset] lg:w-[400px]'
                     alt=''
                     initial={{ y: -40 }}

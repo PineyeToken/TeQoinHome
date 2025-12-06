@@ -9,7 +9,7 @@ const ProgramsCard = () => {
             <HeaderGradientCircle className='pointer-events-none absolute -z-1 h-auto w-full lg:w-[600px]' />
             <div className='rounded-[20px] bg-gradient-to-b from-[#00246F] to-[#000000] p-[2px]'>
                 <div className='rounded-[16px] bg-[#141E35] p-[22px] text-[#FDFDFD]'>
-                    <img src='/img/wallet.png' className='mb-4 w-[60px] drop-shadow-[0_0px_13px_#0153FD] lg:w-[86px]' />
+                    <img src='/img/wallet.webp' className='mb-4 w-[60px] drop-shadow-[0_0px_13px_#0153FD] lg:w-[86px]' />
                     <p className='accent-font mb-2 text-[19px] font-bold'>Wallet & Payments</p>
                     <small className='accent-font text-[14px]'>
                         A fast, non-custodial wallet with instant, zero-fee transfers and seamless QR payments.
@@ -18,19 +18,19 @@ const ProgramsCard = () => {
             </div>
             <div className='rounded-[20px] bg-gradient-to-b from-[#00246F] to-[#000000] p-[2px]'>
                 <div className='rounded-[16px] bg-[#0153FD] p-[22px] text-[#FDFDFD]'>
-                    <img src='/img/wallet.png' className='mb-4 w-[60px] lg:w-[86px]' />
-                    <p className='accent-font mb-2 text-[19px] font-bold'>Wallet & Payments</p>
+                    <img src='/img/defi.webp' className='mb-4 w-[80px] lg:w-[86px]' />
+                    <p className='accent-font mb-2 text-[19px] font-bold'>Bridge & DeFi</p>
                     <small className='accent-font text-[14px]'>
-                        A fast, non-custodial wallet with instant, zero-fee transfers and seamless QR payments.
+                        Move assets across chains, swap tokens, and earn rewards through TeQoin’s lightweight DeFi layer.
                     </small>
                 </div>
             </div>
             <div className='rounded-[20px] bg-gradient-to-b from-[#00246F] to-[#000000] p-[2px]'>
                 <div className='rounded-[16px] bg-[#141E35] p-[22px] text-[#FDFDFD]'>
-                    <img src='/img/wallet.png' className='mb-4 w-[60px] drop-shadow-[0_0px_13px_#0153FD] lg:w-[86px]' />
-                    <p className='accent-font mb-2 text-[19px] font-bold'>Wallet & Payments</p>
+                    <img src='/img/dapps.webp' className='mb-4 w-[60px] drop-shadow-[0_0px_13px_#0153FD] lg:w-[86px]' />
+                    <p className='accent-font mb-2 text-[19px] font-bold'>dApps</p>
                     <small className='accent-font text-[14px]'>
-                        A fast, non-custodial wallet with instant, zero-fee transfers and seamless QR payments.
+                        An EVM-compatible platform for developers to launch scalable applications on TeQoin.
                     </small>
                 </div>
             </div>
