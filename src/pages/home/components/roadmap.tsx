@@ -170,7 +170,7 @@ const roadmapRight = [
         subtitle: 'Begin transition to ZK Rollup',
         description: (
             <>
-                <ul className='accent-font font-light text-[10px] xl:p-4 xl:text-[14px] xl:font-extralight'>
+                <ul className='accent-font text-[10px] font-light xl:p-4 xl:text-[14px] xl:font-extralight'>
                     <li className='mb-2'>
                         <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>
                         Hybrid ZK Rollup network
@@ -287,7 +287,7 @@ const Roadmap: React.FC = () => {
     }, []);
 
     return (
-        <section className='relative mt-[80px] mb-40' id='roadmap'>
+        <section className='relative mt-[80px] overflow-hidden pb-60' id='roadmap'>
             <FloatingDots count={200} minSize={0.5} maxSize={1.5} minFade={0.0005} maxFade={0.0015} speed={0.2} />
             <HeaderGradientCircle className='pointer-events-none absolute top-[-100px] left-[-400px] -z-1 h-auto w-[800px]' />
             <HeaderGradientCircle className='pointer-events-none absolute right-[-400px] bottom-[-400px] -z-10 h-auto w-[800px]' />

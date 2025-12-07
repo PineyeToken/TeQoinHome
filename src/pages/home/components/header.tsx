@@ -26,7 +26,7 @@ const Header = () => {
                 loop
                 controls={false}
                 muted
-                className='video absolute top-0 left-0 -z-20 h-screen w-full object-none'
+                className='video absolute top-0 left-0 -z-20 h-screen w-full object-cover'
             >
                 <source src='/video/headerVideo.mp4' type='video/mp4' />
             </video>

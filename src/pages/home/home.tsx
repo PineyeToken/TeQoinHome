@@ -5,16 +5,18 @@ import { AboutBusiness, BenefitsCart, BuildingSection, Header, Mission, Programs
 
 const Home = () => {
     return (
-        <main>
+        <main className='md:overflow-[initial] overflow-hidden'>
             <Navbar />
             <Header />
             <AboutBusiness />
-            <div className='overflow-hidden'>
+            <div>
                 <BenefitsCart />
                 <BuildingSection />
                 <Mission />
                 <ProgramsCard />
                 <Roadmap />
+            </div>
+            <div className='absolute z-10 flex w-full justify-center'>
                 <Footer />
             </div>
         </main>

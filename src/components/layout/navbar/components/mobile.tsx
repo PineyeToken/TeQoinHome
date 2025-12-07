@@ -65,7 +65,7 @@ const MobileNavbar = () => {
                                     key={`navbar-links-${index}`}
                                     className={`relative flex border-b-2 border-b-[#2C3B5B] text-[14px] text-white transition-all duration-300 before:absolute before:bottom-[-2px] before:left-0 before:h-[2px] before:w-0 before:bg-[#4C6CFF] before:transition-all before:duration-300 last:border-b-0 hover:text-[#3385FF] hover:before:w-[72px] ${window.location.hash === item.link ? '!text-[#3385FF] before:w-[72px] before:bg-[#4C6CFF]' : ''}`}
                                 >
-                                    <a href={item.link} className='flex h-full w-full py-4'>
+                                    <a href={`#${item.link}`} className='flex h-full w-full py-4'>
                                         {item.title}
                                     </a>
                                 </li>

@@ -7,23 +7,33 @@ interface INavbarLinks {
 export const navbarLinks: INavbarLinks[] = [
     {
         title: 'Home',
-        link: '#home'
+        link: 'home'
     },
     {
         title: 'Use Cases',
-        link: '#use-case'
+        link: 'use-case'
     },
     {
         title: 'RoadMap',
-        link: '#roadmap'
+        link: 'roadmap'
     },
     {
         title: 'whitepaper',
-        link: '#roadmap'
+        link: 'roadmap'
     }
 ];
 
 const DesktopNavbar = () => {
+    const handleScroll = (id: string) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+
+        el.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    };
+
     return (
         <nav className='absolute top-8 z-40 hidden w-full items-center justify-center px-3 lg:flex'>
             <div className='flex h-[68px] w-[1000px] items-center justify-between rounded-full bg-white px-3'>
@@ -32,7 +42,7 @@ const DesktopNavbar = () => {
                 <ol className='flex items-center gap-5 text-[14px]'>
                     {navbarLinks.map((item, index) => (
                         <li key={`navbar-links-${index}`}>
-                            <a href={item.link} className='hover:text-[#0153FD]'>
+                            <a onClick={() => handleScroll(item.link)} className='hover:text-[#0153FD]'>
                                 {item.title}
                             </a>
                         </li>
