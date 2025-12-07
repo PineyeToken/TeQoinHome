@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { HeaderGradientCircle } from 'assets/icons';
+import { BoxArrow, HeaderGradientCircle } from 'assets/icons';
 import FloatingDots from 'components/floating-dots';
 import { ReactNode, useEffect, useState } from 'react';
 
@@ -11,13 +11,31 @@ const roadmapLeft = [
         subtitle: 'First operational L@ network',
         description: (
             <>
-                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px]'>
-                    <li className='mb-2'>. Mainnet launch (sequencer centralized)</li>
-                    <li className='mb-2'>. Wallet v2 & payments</li>
-                    <li className='mb-2'>. Bridge fully operational</li>
-                    <li className='mb-2'>. Explorer v2 & analytics</li>
-                    <li className='mb-2'>. Staking & liquidity incentives beta</li>
-                    <li className='mb-2'>. Developer SDK & templates</li>
+                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px] xl:font-extralight'>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Mainnet launch (sequencer centralized)
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Wallet v2 & payments
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Bridge fully operational
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Explorer v2 & analytics
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Staking & liquidity incentives beta
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Developer SDK & templates
+                    </li>
                 </ul>
             </>
         )
@@ -29,11 +47,23 @@ const roadmapLeft = [
         subtitle: 'Public usability & ling-term growth',
         description: (
             <>
-                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px]'>
-                    <li className='mb-2'>. Full public wallet & multi-chain assets</li>
-                    <li className='mb-2'>. Fast-withdraw options</li>
-                    <li className='mb-2'>. Governance framework for sequencer decentralization</li>
-                    <li className='mb-2'>. Advanced analytics dashboards</li>
+                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px] xl:font-extralight'>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Full public wallet & multi-chain assets
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Fast-withdraw options
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Governance framework for sequencer decentralization
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Advanced analytics dashboards
+                    </li>
                 </ul>
             </>
         )
@@ -45,11 +75,23 @@ const roadmapLeft = [
         subtitle: 'Full ZK Rollup deployment & ecosystem scaling',
         description: (
             <>
-                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px]'>
-                    <li className='mb-2'>. Complete ZK Rollup network</li>
-                    <li className='mb-2'>. Fully decentralized sequencer & governance</li>
-                    <li className='mb-2'>. Expanded staking & liquidity rewards</li>
-                    <li className='mb-2'>. Advanced developer tools & SDKs</li>
+                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px] xl:font-extralight'>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Complete ZK Rollup network
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Fully decentralized sequencer & governance
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Expanded staking & liquidity rewards
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Advanced developer tools & SDKs
+                    </li>
                 </ul>
             </>
         )
@@ -64,13 +106,31 @@ const roadmapRight = [
         subtitle: 'Launch MVP for developers & early users',
         description: (
             <>
-                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px]'>
-                    <li className='mb-2'>. Wallet (ETH + ERC20)</li>
-                    <li className='mb-2'>. Instant payments demo</li>
-                    <li className='mb-2'>. Private → public testnet</li>
-                    <li className='mb-2'>. Bridge MVP</li>
-                    <li className='mb-2'>. Basic dApp deployment</li>
-                    <li className='mb-2'>. Explorer v1 & RPC endpoints</li>
+                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px] xl:font-extralight'>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Wallet (ETH + ERC20)
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Instant payments demo
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Private → public testnet
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Bridge MVP
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Basic dApp deployment
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>{' '}
+                        Explorer v1 & RPC endpoints
+                    </li>
                 </ul>
             </>
         )
@@ -82,11 +142,23 @@ const roadmapRight = [
         subtitle: 'Adoption & incentives',
         description: (
             <>
-                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px]'>
-                    <li className='mb-2'>. Multi-token bridge support</li>
-                    <li className='mb-2'>. Advanced staking & liquidity rewards</li>
-                    <li className='mb-2'>. SDK & templates for complex dApps</li>
-                    <li className='mb-2'>. Grants & hackathons</li>
+                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px] xl:font-extralight'>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>
+                        Multi-token bridge support
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>
+                        Advanced staking & liquidity rewards
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>
+                        SDK & templates for complex dApps
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>
+                        Grants & hackathons
+                    </li>
                 </ul>
             </>
         )
@@ -98,11 +170,23 @@ const roadmapRight = [
         subtitle: 'Begin transition to ZK Rollup',
         description: (
             <>
-                <ul className='accent-font text-[10px] xl:p-4 xl:text-[14px]'>
-                    <li className='mb-2'>. Hybrid ZK Rollup network</li>
-                    <li className='mb-2'>. Instant transaction finality</li>
-                    <li className='mb-2'>. Backward-compatible dApps</li>
-                    <li className='mb-2'>. Multi-token bridge & fast withdrawals</li>
+                <ul className='accent-font font-light text-[10px] xl:p-4 xl:text-[14px] xl:font-extralight'>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>
+                        Hybrid ZK Rollup network
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>
+                        Instant transaction finality
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>
+                        Backward-compatible dApps
+                    </li>
+                    <li className='mb-2'>
+                        <span className='relative -top-0.5 mr-1 inline-block h-[2px] w-[2px] rounded-full bg-[white] lg:h-[3px] lg:w-[3px]'></span>
+                        Multi-token bridge & fast withdrawals
+                    </li>
                 </ul>
             </>
         )
@@ -153,10 +237,11 @@ const RoadmapItem: React.FC<RoadmapItemProps> = ({
             onMouseLeave={isDesktop ? () => setOpen(null) : undefined}
         >
             <div
-                className={`absolute ${isLeft ? 'right-2 xl:right-[300px]' : 'left-2 xl:left-[300px]'} t-0 z-10 w-full rounded-[16px] border border-solid border-[#033BCC] bg-[#010101] p-3 transition-all duration-300 xl:w-[300px] ${
+                className={`absolute lg:flex lg:items-center ${isLeft ? 'right-2 xl:right-[300px]' : 'left-2 xl:left-[300px]'} t-0 z-10 w-full rounded-[16px] border border-solid border-[#033BCC] bg-[#010101] p-3 transition-all duration-300 xl:w-[300px] ${
                     isOpen ? 'scale-100 opacity-100' : 'pointer-events-none scale-95 opacity-0'
                 }`}
             >
+                <BoxArrow className={`${isLeft ? 'right-[-20px] rotate-[180deg]' : 'left-[-20px]'} absolute hidden xl:block`} />
                 <b className='accent-font mb-2 block text-[12px] leading-[16px] font-medium lg:hidden'>{subtitle}</b>
                 {description}
             </div>
