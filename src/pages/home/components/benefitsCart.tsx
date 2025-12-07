@@ -11,7 +11,7 @@ const BenefitsCart = () => {
                 className='mb-4 flex w-full flex-col items-center justify-center gap-4 px-[20px] lg:m-auto lg:mb-20 lg:flex-row lg:p-0 lg:px-[20px] xl:w-[1200px]'
             >
                 <div className='w-full rounded-[20px] bg-gradient-to-b from-[#00246F] to-[#000000] p-[2px]'>
-                    <div className='rounded-[16px] bg-[#141E35] p-[22px] text-[#FDFDFD]'>
+                    <div className='rounded-[16px] bg-[#141E35] p-[22px] text-[#FDFDFD] lg:py-[30px]'>
                         <ZeroFee className='mb-4' />
                         <p className='accent-font mb-2 text-[19px] font-normal'>Zero Fees</p>
                         <small className='accent-font text-[14px] lg:font-extralight'>
@@ -20,7 +20,7 @@ const BenefitsCart = () => {
                     </div>
                 </div>
                 <div className='w-full rounded-[20px] bg-gradient-to-b from-[#00246F] to-[#000000] p-[2px]'>
-                    <div className='rounded-[16px] bg-[#141E35] p-[22px] text-[#FDFDFD]'>
+                    <div className='rounded-[16px] bg-[#141E35] p-[22px] text-[#FDFDFD] lg:py-[30px]'>
                         <ShooingStar className='mb-4' />
                         <p className='accent-font mb-2 text-[19px] font-normal'>High Speed & Throughput</p>
                         <small className='accent-font text-[14px] lg:font-extralight'>
@@ -29,7 +29,7 @@ const BenefitsCart = () => {
                     </div>
                 </div>
                 <div className='w-full rounded-[20px] bg-gradient-to-b from-[#00246F] to-[#000000] p-[2px]'>
-                    <div className='rounded-[16px] bg-[#141E35] p-[22px] text-[#FDFDFD]'>
+                    <div className='rounded-[16px] bg-[#141E35] p-[22px] text-[#FDFDFD] lg:py-[30px]'>
                         <Reliability className='mb-4' />
                         <p className='accent-font mb-2 text-[19px] font-normal'>Efficiency & Reliability</p>
                         <small className='accent-font text-[14px] lg:font-extralight'>

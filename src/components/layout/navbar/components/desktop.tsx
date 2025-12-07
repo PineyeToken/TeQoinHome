@@ -32,7 +32,9 @@ const DesktopNavbar = () => {
                 <ol className='flex items-center gap-5 text-[14px]'>
                     {navbarLinks.map((item, index) => (
                         <li key={`navbar-links-${index}`}>
-                            <a href={item.link}>{item.title}</a>
+                            <a href={item.link} className='hover:text-[#0153FD]'>
+                                {item.title}
+                            </a>
                         </li>
                     ))}
                 </ol>

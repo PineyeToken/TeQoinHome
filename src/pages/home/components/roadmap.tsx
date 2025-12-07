@@ -172,8 +172,8 @@ const RoadmapItem: React.FC<RoadmapItemProps> = ({
                 alt=''
                 className={`absolute top-[-44px] z-[1] hidden ${isLeft ? 'left-[27px]' : 'left-[-27px] rotate-180'} lg:block`}
             />
-            <p className='text-center text-[26px] lg:text-[44px]'>
-                <b>{quarter}</b> {year}
+            <p className='text-center text-[26px] font-light lg:text-[44px]'>
+                <b className='font-medium'>{quarter}</b> {year}
             </p>
             <small className='flex w-full items-center justify-center text-center text-[14px] lg:text-[22px] lg:font-light'>{label}</small>
             <b className='accent-font mb-2 hidden text-center text-[12px] leading-[16px] font-light lg:block'>{subtitle}</b>
@@ -230,7 +230,7 @@ const Roadmap: React.FC = () => {
                     })}
                 </div>
 
-                <span className='relative top-[-30px] h-[900px] w-0.5 bg-[linear-gradient(180deg,rgba(1,64,184,0)_-2.2%,rgba(1,88,255,0.5)_5.73%,rgba(1,87,252,0.84)_73.45%,rgba(1,53,153,0)_100%)] lg:h-[1300px]'></span>
+                <span className='relative top-[-30px] -mb-20 h-[900px] w-0.5 bg-[linear-gradient(180deg,rgba(1,64,184,0)_-2.2%,rgba(1,88,255,0.5)_5.73%,rgba(1,87,252,0.84)_73.45%,rgba(1,53,153,0)_100%)] lg:h-[1300px]'></span>
 
                 <div>
                     {roadmapRight.map(item => {

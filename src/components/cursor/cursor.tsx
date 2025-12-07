@@ -21,8 +21,8 @@ export default function CustomCursor() {
                 position: 'fixed',
                 top: pos.y,
                 left: pos.x,
-                width: 20,
-                height: 20,
+                width: 25,
+                height: 25,
                 pointerEvents: 'none',
                 zIndex: 9999
             }}
