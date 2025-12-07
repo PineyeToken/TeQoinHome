@@ -23,9 +23,6 @@ const BuildingSection = () => {
             />
             <div className='w-[90%]'>
                 <h3 className='accent-font text-[38px] font-normal md:text-[52px]'>Building EVM for the Future</h3>
-                <p className='accent-font text-[16px] font-light md:m-auto md:w-[660px] md:text-[20px]'>
-                    A secure, scalable, quantum-ready ecosystem designed for the next era of Bitcoin utility.
-                </p>
             </div>
         </section>
     );
