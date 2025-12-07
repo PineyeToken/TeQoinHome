@@ -16,12 +16,11 @@ const Header = () => {
     return (
         <header
             id='home'
-            className='relative flex h-screen flex-col items-center overflow-hidden pt-30 text-center font-bold text-white md:justify-center'
+            className='relative flex h-[90vh] flex-col items-center overflow-hidden pt-30 text-center font-bold text-white md:h-screen md:justify-center'
         >
             <HeaderGradientCircle className='absolute top-[-100%] right-[-50%] -z-1 md:flex' />
 
             <span className='absolute bottom-0 left-0 -z-1 h-[200px] w-full bg-[linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(0,0,0,0)_100%)]'></span>
-            {/* TODO: add poster */}
             <video
                 playsInline
                 autoPlay
@@ -32,7 +31,6 @@ const Header = () => {
             >
                 <source src='/video/headerVideo.mp4' type='video/mp4' />
             </video>
-            <span className='absolute top-0 left-0 -z-10 h-screen w-full bg-[linear-gradient(0deg,rgba(0,0,0,0.49)_0%,rgba(0,0,0,1)_100%)]'></span>
             <h1 className='accent-font mb-2 text-[16px] tracking-[3px] text-[#0153FD] md:text-[32px] md:tracking-[4px]'>TeQoin</h1>
             <h3 className='accent-font text-[24px] tracking-[3px] md:text-[52px] md:tracking-[6px]'>The Next-Generation</h3>
             <h2 className='accent-font -mt-3 text-[41px] tracking-[5px] md:-mt-0 md:mb-6 md:text-[88px] md:leading-[60px] md:tracking-[10px]'>

@@ -10,23 +10,15 @@ export const navbarLinks: INavbarLinks[] = [
         link: '#home'
     },
     {
-        title: 'About Us',
-        link: '#about-us'
-    },
-    {
-        title: 'Features',
-        link: '#features'
-    },
-    {
-        title: 'Vision & Mission',
-        link: '#vision-mission'
-    },
-    {
         title: 'Use Cases',
         link: '#use-case'
     },
     {
         title: 'RoadMap',
+        link: '#roadmap'
+    },
+    {
+        title: 'whitepaper',
         link: '#roadmap'
     }
 ];

@@ -1,7 +1,8 @@
 import { SpecialArrow, TelegramLogo, XLogo } from 'assets/icons';
 import { motion } from 'framer-motion';
 
-const iconClasses = 'flex h-[52px] w-[52px] items-center justify-center rounded-full bg-[#E1EAF7]';
+const iconClasses =
+    'flex h-[40px] w-[40px] items-center justify-center rounded-full text-[#0153F0] bg-[#E1EAF7] md:h-[56px] md:w-[56px] hover:bg-[#0252FD] hover:text-[white]';
 
 const AboutBusiness = () => {
     return (

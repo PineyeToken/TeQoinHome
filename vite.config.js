@@ -4,7 +4,6 @@ import mkcert from 'vite-plugin-mkcert';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import tailwindcss from '@tailwindcss/vite';
 import svgr from 'vite-plugin-svgr';
-
 export default defineConfig({
     plugins: [react(), tsconfigPaths(), mkcert(), tailwindcss(), svgr()],
     server: {

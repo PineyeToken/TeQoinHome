@@ -7,7 +7,8 @@ import { Cross, Menu, TelegramLogo, XLogo } from 'assets/icons';
 // Components
 import { navbarLinks } from './desktop';
 
-const iconClasses = 'flex h-[45px] w-[45px] items-center justify-center rounded-full bg-[#E1EAF7]';
+const iconClasses =
+    'flex h-[40px] w-[40px] items-center justify-center rounded-full text-[#0153F0] bg-[#E1EAF7] md:h-[56px] md:w-[56px] hover:bg-[#0252FD] hover:text-[white]';
 
 const MobileNavbar = () => {
     const [sandwichMenuStatus, setSandwichMenuStatus] = useState(false);

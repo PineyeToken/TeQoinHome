@@ -23,7 +23,6 @@ export default function CustomCursor() {
                 left: pos.x,
                 width: 20,
                 height: 20,
-                transform: 'translate(-50%, -50%)',
                 pointerEvents: 'none',
                 zIndex: 9999
             }}
