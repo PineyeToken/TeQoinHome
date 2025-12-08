@@ -2,6 +2,7 @@
 interface INavbarLinks {
     title: string;
     link: string;
+    type?: 'EXTERNAL';
 }
 
 export const navbarLinks: INavbarLinks[] = [
@@ -19,13 +20,19 @@ export const navbarLinks: INavbarLinks[] = [
     },
     {
         title: 'whitepaper',
-        link: 'roadmap'
+        link: '/whitepaper.pdf',
+        type: 'EXTERNAL'
     }
 ];
 
 const DesktopNavbar = () => {
-    const handleScroll = (id: string) => {
-        const el = document.getElementById(id);
+    const handleScroll = (item: INavbarLinks) => {
+        if (item.type === 'EXTERNAL') {
+            window.location.href = '/whitepaper.pdf';
+            return;
+        }
+
+        const el = document.getElementById(item.link);
         if (!el) return;
 
         el.scrollIntoView({
@@ -43,7 +50,7 @@ const DesktopNavbar = () => {
                     {navbarLinks.map((item, index) => (
                         <li key={`navbar-links-${index}`}>
                             <a
-                                onClick={() => handleScroll(item.link)}
+                                onClick={() => handleScroll(item)}
                                 className={`hover:text-[#0153FD] ${item.title === 'Home' ? 'font-semibold !text-[#0153FD]' : ''}`}
                             >
                                 {item.title}
