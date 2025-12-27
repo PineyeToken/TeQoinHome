@@ -16,7 +16,7 @@ const MobileNavbar = () => {
     return (
         <>
             <nav className='fixed top-0 z-50 flex h-[58px] w-full items-center justify-between bg-white px-5 pl-2 lg:hidden'>
-                <img src='/img/logoWithText.webp' className='w-[140px]' alt='' />{' '}
+                <img src='/img/logoWithText.webp' className='w-[140px]' alt='TeQoin logo with brand name' />{' '}
                 <AnimatePresence mode='wait'>
                     {sandwichMenuStatus ? (
                         <motion.div

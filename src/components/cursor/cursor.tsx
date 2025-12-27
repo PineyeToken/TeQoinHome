@@ -33,7 +33,7 @@ export default function CustomCursor() {
     return (
         <img
             src='/img/cursor.png'
-            alt=''
+            alt='Custom cursor icon'
             className='pointer-events-none fixed z-[9999] h-[25px] w-[25px]'
             style={{ top: pos.y, left: pos.x, display: isDesktop ? 'block' : 'none' }}
         />

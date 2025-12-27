@@ -23,7 +23,7 @@ const AboutBusiness = () => {
                         ease: 'easeInOut'
                     }}
                 />
-                <img src='/img/evmImg2.webp' alt='' className='w-[80%] max-w-[400px] lg:w-[550px] lg:max-w-[unset]' />
+                <img src='/img/evmImg2.webp' alt='EVM Logo' className='w-[80%] max-w-[400px] lg:w-[550px] lg:max-w-[unset]' />
             </div>
             <div className='relative z-5 text-center text-white'>
                 <h3 className='accent-font text-[32px] font-bold lg:text-left lg:text-[52px]'>What is TeQoin</h3>

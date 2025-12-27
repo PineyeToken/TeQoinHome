@@ -21,7 +21,7 @@ const Footer = () => {
                 <img
                     src='/img/logoWithText.webp'
                     className='relative top-[-46px] w-[125px] md:top-[unset] md:right-[-40px] md:w-[200px]'
-                    alt=''
+                    alt='TeQoin logo with brand name'
                 />
             </div>
         </footer>

@@ -248,13 +248,13 @@ const RoadmapItem: React.FC<RoadmapItemProps> = ({
 
             <img
                 src='/img/separatorMobile.webp'
-                alt=''
+                alt='Line'
                 className={`absolute top-[-44px] z-[1] ${isLeft ? 'left-[26px] rotate-180' : 'left-[-26px]'} lg:hidden`}
             />
 
             <img
                 src='/img/separatorDesktop.webp'
-                alt=''
+                alt='Line'
                 className={`absolute top-[-44px] z-[1] hidden ${isLeft ? 'left-[27px]' : 'left-[-27px] rotate-180'} lg:block`}
             />
             <p className='text-center text-[26px] font-light lg:text-[44px]'>

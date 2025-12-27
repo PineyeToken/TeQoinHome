@@ -44,7 +44,7 @@ const DesktopNavbar = () => {
     return (
         <nav className='absolute top-8 z-40 hidden w-full items-center justify-center px-3 lg:flex'>
             <div className='flex h-[68px] w-[1000px] items-center justify-between rounded-full bg-white px-3'>
-                <img src='/img/logoWithText.webp' className='w-[140px]' alt='' />
+                <img src='/img/logoWithText.webp' className='w-[140px]' alt='TeQoin logo with brand name' />
 
                 <ol className='flex items-center gap-5 text-[14px]'>
                     {navbarLinks.map((item, index) => (
